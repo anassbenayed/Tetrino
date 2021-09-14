@@ -1,5 +1,9 @@
 # Tetrino
 
+Notes: 
+- Debug: set Target Platform to x64 for TetgenSharp, TetgenWrapper (build [ ]) and the startup project TetrinoTest
+- Release: set Target Platform to x64 for TetgenSharp and the startup project TetrinoTest; Win32 for TetgenWrapper (build [ ])
+
 "TetGen is a program to generate tetrahedral meshes of any 3D polyhedral domains. TetGen generates exact constrained Delaunay tetrahedralizations, boundary conforming Delaunay meshes, and Voronoi partitions." (http://wias-berlin.de/software/index.jsp?id=TetGen&lang=1)
 
 TetRhino (or Tetrino) is a .NET wrapper for the well-known and pretty amazing TetGen mesh tetrahedralization program. It provides one new GH component for discretizing or remeshing objects using TetGen. Basic tetrahedralization functionality is exposed with a few different output types that can be controlled. At the moment, the only control for tetrahedra sizes is the minimum ratio, which is controlled by a slider. This is hardcoded to always be above 1.0-1.1, as it is very easy to generate a LOT of data (and crash)...
