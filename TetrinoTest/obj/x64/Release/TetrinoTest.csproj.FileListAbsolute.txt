@@ -1,0 +1,8 @@
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\Test.exe.config
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\Test.exe
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\Test.pdb
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetrinoTest\obj\x64\Release\TetrinoTest.csprojAssemblyReference.cache
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetrinoTest\obj\x64\Release\TetrinoTest.csproj.CoreCompileInputs.cache
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetrinoTest\obj\x64\Release\TetrinoTest.csproj.CopyComplete
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetrinoTest\obj\x64\Release\Test.exe
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetrinoTest\obj\x64\Release\Test.pdb

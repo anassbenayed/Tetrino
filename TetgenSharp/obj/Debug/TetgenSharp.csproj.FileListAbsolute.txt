@@ -1,0 +1,5 @@
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\TetgenSharp.dll
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\TetgenSharp.pdb
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenSharp\obj\Debug\TetgenSharp.csproj.CoreCompileInputs.cache
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenSharp\obj\Debug\TetgenSharp.dll
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenSharp\obj\Debug\TetgenSharp.pdb

@@ -1,0 +1,10 @@
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenGH\obj\Debug64\TetgenGH.csprojAssemblyReference.cache
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenGH\obj\Debug64\TetgenGH.Properties.Resources.resources
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenGH\obj\Debug64\TetgenGH.csproj.GenerateResource.cache
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenGH\obj\Debug64\TetgenGH.csproj.CoreCompileInputs.cache
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\TetgenGH.dll.config
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\TetgenGH.dll
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\TetgenGH.pdb
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenGH\obj\Debug64\TetgenGH.csproj.CopyComplete
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenGH\obj\Debug64\TetgenGH.dll
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenGH\obj\Debug64\TetgenGH.pdb

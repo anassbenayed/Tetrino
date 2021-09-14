@@ -1,0 +1,7 @@
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\TetgenRC.dll
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\bin\TetgenRC.pdb
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenRC\obj\Debug\TetgenRC.csprojAssemblyReference.cache
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenRC\obj\Debug\TetgenRC.csproj.CoreCompileInputs.cache
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenRC\obj\Debug\TetgenRC.csproj.CopyComplete
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenRC\obj\Debug\TetgenRC.dll
+C:\Users\edwar\OneDrive\Documents\GitHub\tetrino\TetgenRC\obj\Debug\TetgenRC.pdb
