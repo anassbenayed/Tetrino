@@ -18,7 +18,7 @@
 */
 
 #include "Wrapper.h"
-#include "tetgen.h"
+#include "../tetgen-1.5.1/tetgen.h"
 
 InteropMesh* performTetgen(InteropMesh* mesh, TetgenBehaviour* tb)
 {

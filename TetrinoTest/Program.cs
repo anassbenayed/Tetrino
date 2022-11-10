@@ -1571,13 +1571,22 @@ namespace Test
             b.refine = 0;
             b.quality = 1;
             b.plc = 1;
-            //b.maxvolume = 100000;
-            //b.mindihedral = 10;
-            //b.supsteiner_level = 1;
+            b.coarsen = 1;
+            b.maxvolume = 100000;
+            b.mindihedral = 10;
+            b.supsteiner_level = 1;
             b.minratio = 4.0;
+            b.nobisect = 1;
             //int N = TetgenSharp.TetgenSharp.Test();
 
-            TetgenSharp.TetgenMesh tm2 = TetgenSharp.TetRhino.Tetrahedralize(tm.Vertices, tm.FaceIndices, tm.FaceSizes, b);
+            try
+            {
+                TetgenSharp.TetgenMesh tm2 = TetgenSharp.TetRhino.Tetrahedralize(tm, b);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(nameof(TetgenSharp.TetRhino.Tetrahedralize), e.Message);
+            }            
 
             System.Console.WriteLine("End.");
 

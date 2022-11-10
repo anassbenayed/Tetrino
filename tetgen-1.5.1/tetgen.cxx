@@ -12317,9 +12317,9 @@ void tetgenmesh::incrementaldelaunay(clock_t& tv)
   while ((distance(permutarray[0],permutarray[i])/bboxsize)<b->epsilon) {
     i++;
     if (i == in->numberofpoints - 1) {
-      printf("Exception:  All vertices are (nearly) identical (Tol = %g).\n",
+      printf("Exception:  All vertices are (nearly) identical <><><><><><><><><><><> (Tol = %g).\n",
              b->epsilon);
-      terminatetetgen(this, 10);
+      //terminatetetgen(this, 10); // barra nayek
     }
   }
   if (i > 1) {
@@ -12343,7 +12343,7 @@ void tetgenmesh::incrementaldelaunay(clock_t& tv)
     if (i == in->numberofpoints - 1) {
       printf("Exception:  All vertices are (nearly) collinear (Tol = %g).\n",
              b->epsilon);
-      terminatetetgen(this, 10);
+      //terminatetetgen(this, 10); // barra nayek
     }
     for (j = 0; j < 3; j++) {
       v2[j] = permutarray[i][j] - permutarray[0][j];
@@ -12366,7 +12366,7 @@ void tetgenmesh::incrementaldelaunay(clock_t& tv)
     if (i == in->numberofpoints) {
       printf("Exception:  All vertices are coplanar (Tol = %g).\n",
              b->epsilon);
-      terminatetetgen(this, 10);
+      //terminatetetgen(this, 10); // barra nayek
     }
     ori = orient3dfast(permutarray[0], permutarray[1], permutarray[2], 
                        permutarray[i]);

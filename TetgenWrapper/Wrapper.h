@@ -21,17 +21,16 @@
 #define WRAPPER_H
 
 #include <cstdlib>
-#include "tetgen.h"
-
 #include <iostream>
+#include "../tetgen-1.5.1/tetgen.h"
 
 struct InteropMesh
 {
-	double *vertices; // numVertices * 3
-	int *faceIndices; 
-	int *faceSizes;
-	int *tetra; // numTetra * 4
-	int *edges; // numEdges * 2
+	double* vertices; // numVertices * 3
+	int* faceIndices;
+	int* faceSizes;
+	int* tetra; // numTetra * 4
+	int* edges; // numEdges * 2
 	int numVertices;
 	int numFaces;
 	int numFaceIndices;
@@ -68,14 +67,14 @@ struct TetgenBehaviour
 	double optminsmtdihed = 179.0;
 };
 
-extern "C" __declspec(dllexport) InteropMesh* performTetgen(InteropMesh* mesh, TetgenBehaviour* behaviour);
+extern "C" { __declspec(dllexport) InteropMesh* performTetgen(InteropMesh* mesh, TetgenBehaviour* behaviour); }
 
-extern "C" __declspec(dllexport) void freeMesh(InteropMesh* mesh);
+extern "C" {__declspec(dllexport) void freeMesh(InteropMesh* mesh); }
 
-extern "C" __declspec(dllexport) int test();
+extern "C" {__declspec(dllexport) int test(); }
 
-tetgenio* io_to_tetgenio(InteropMesh* mesh);
+extern "C" {__declspec(dllexport) tetgenio* io_to_tetgenio(InteropMesh* mesh); }
 
-InteropMesh* tetgenio_to_io(tetgenio* io);
+extern "C" {__declspec(dllexport) InteropMesh* tetgenio_to_io(tetgenio* io); }
 
 #endif

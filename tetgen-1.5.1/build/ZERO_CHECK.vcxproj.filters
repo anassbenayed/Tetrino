@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\edwar\OneDrive\Documents\GitHub\anassbenayed\Tetrino\tetgen-1.5.1\build\CMakeFiles\dfd5040a175347993ff99c0009bf2fd1\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{889CDA9B-82E1-3DCE-92C5-8654AF8EF231}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

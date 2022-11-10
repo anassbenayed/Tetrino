@@ -65,6 +65,10 @@ namespace TetgenSharp
         public int coarsen = 0;
         public int insertaddpoints = 0;
 
+        public int nobisect = 0;
+        public int edgesout = 0;
+        public int neighout = 0;
+
         public int supsteiner_level = 2;
         public int optlevel = 2;
 
@@ -142,6 +146,10 @@ namespace TetgenSharp
             public int coarsen;
             public int insertaddpoints;
 
+            public int nobisect;
+            public int edgesout;
+            public int neighout;
+
             public int supsteiner_level;
             public int optlevel;
 
@@ -171,6 +179,11 @@ namespace TetgenSharp
 
         [DllImport("TetgenWrapper.dll")]
         private static unsafe extern int test();
+        [DllImport("TetgenWrapper.dll")]
+        private static unsafe extern InteropMesh* io_to_tetgenio(InteropMesh* mesh);
+        [DllImport("TetgenWrapper.dll")]
+        private static unsafe extern InteropMesh* tetgenio_to_io(InteropMesh* io);
+
 
         /// <summary>
         /// Performs the specified operation on the provided meshes.
@@ -183,7 +196,7 @@ namespace TetgenSharp
         /// <param name="secondFaceSizes">Face sizes of second mesh as int list.</param>
         /// <param name="operation">The mesh opration to perform on the two meshes</param>
         /// <returns>A triangular mesh resulting from performing the specified operation. If the resulting mesh is empty, will return null.</returns>
-        [System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions]
+        [System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions, System.Security.SecurityCritical]
         public static TetgenMesh Tetrahedralize(double[] vertList, int[] faceIndexList, int[] faceSizesList, TetgenBehaviour beh)
         {
             TetgenMesh finalResult = null;
@@ -224,6 +237,9 @@ namespace TetgenSharp
                             bu.insertaddpoints = beh.insertaddpoints;
                             bu.refine = beh.refine;
                             bu.supsteiner_level = beh.supsteiner_level;
+                            bu.nobisect = beh.nobisect;
+                            bu.edgesout = beh.edgesout;
+                            bu.neighout = beh.neighout;
 
 
                             try
@@ -247,12 +263,21 @@ namespace TetgenSharp
                 if (result == null)
                 {
                     System.Console.WriteLine("Result is null.");
+                    //Exception ex = new Exception("abaath ya walid");
+                    //throw ex;
                     return null;
                 }
 
                 if (result->numVertices == 0)
                 {
                     freeMesh(result);
+                    Exception ex = new Exception("abaath ya walid2 -> " +
+                        "\nresult->numVertices " + result->numVertices +
+                        "\nresult->numFaceIndices " + result->numFaceIndices +
+                        "\nresult->numFaces " + result->numFaces +
+                        "\nresult->numTetra " + result->numTetra +
+                        "\nresult->numEdges " + result->numEdges);
+                    throw ex;
                     return null;
                 }
                 finalResult = new TetgenMesh();
@@ -318,4 +343,6 @@ namespace TetgenSharp
         }
 
     }
+
+
 }
